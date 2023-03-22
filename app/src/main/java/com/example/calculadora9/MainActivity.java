@@ -2,6 +2,7 @@ package com.example.calculadora9;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -26,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
         T = N1 - N2;
     }
 
+
+    public void ir_frase(View v){
+        Intent i = new Intent(this, errado.class);
+        startActivity(i);
+    }
 
     public void resetar(View v){
         N1.setText("");
