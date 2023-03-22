@@ -55,10 +55,10 @@
         android:text="Subtrair"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintHorizontal_bias="0.836"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.563" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <Button
         android:id="@+id/btnSoma"
@@ -72,7 +72,7 @@
         app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.563" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <Button
         android:id="@+id/btnFrase"
@@ -95,6 +95,9 @@
         android:backgroundTint="#4788A1"
         android:onClick="resetar"
         android:text="Resetar"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="435dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
 </androidx.constraintlayout.widget.ConstraintLayout>
