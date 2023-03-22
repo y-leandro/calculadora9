@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText N1, N2;
-    TextView T;
+    TextView Ttl;
     int n1, n2, t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,18 +18,28 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         N1 = findViewById(R.id.num1);
         N2 = findViewById(R.id.num2);
-        T = findViewById(R.id.total);
+        Ttl  = findViewById(R.id.total);
+    }
+
+
+    public void numero() {
+        n1 = Integer.parseInt(N1.getText().toString());
+        n2 = Integer.parseInt(N2.getText().toString());
+        t  = Integer.parseInt(Ttl.getText().toString());
     }
 
     public void menos (View v){
-        if(N1 < N2)
-        T = N1 - N2;
+        numero();
+        t = n1 - n2;
     }
-
+    public void mais (View v){
+        numero();
+        t = n1 + n2;
+    }
 
     public void resetar(View v){
         N1.setText("");
         N2.setText("");
-        T.setText("");
+        Ttl.setText("");
     }
 }
