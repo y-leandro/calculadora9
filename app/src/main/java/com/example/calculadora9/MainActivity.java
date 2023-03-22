@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         SM = findViewById(R.id.mostraM);
     }
 
-    public void organizaHora(){
+    public void arrumaHora(){
         h1 = Integer.parseInt(eH1.getText().toString());
         m1 = Integer.parseInt(eM1.getText().toString());
         h2 = Integer.parseInt(eH2.getText().toString());
@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void subtrai(View view){
-        organizaHora();
+    public void menos(View v){
+        arrumaHora();
         if(h2 > h1){
             ht = h2 - h1;
             mt = m2 - m1;
@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
         SM.setText(mt+"");
     }
 
-    public void soma(View view){
-        organizaHora();
+    public void mais(View v){
+        arrumaHora();
         ht = h1 + h2;
         mt = m1 +m2;
         while(mt >59){
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         SM.setText(mt+"");
     }
 
-    public void reset(View view){
+    public void resetar(View v){
         SH.setText("SH");
         SM.setText("SM");
         eH1.setText("");
