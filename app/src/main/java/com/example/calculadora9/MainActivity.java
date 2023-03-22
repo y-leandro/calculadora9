@@ -24,24 +24,8 @@ public class MainActivity extends AppCompatActivity {
         SM = findViewById(R.id.mostraM);
     }
 
-    public void arrumaHora(){
-        h1 = Integer.parseInt(eH1.getText().toString());
-        m1 = Integer.parseInt(eM1.getText().toString());
-        h2 = Integer.parseInt(eH2.getText().toString());
-        m2 = Integer.parseInt(eM2.getText().toString());
-
-        while(m1 > 59){
-            h1 ++;
-            m1 = m1 - 60;
-        }
-        while(m2 >59){
-            h2 ++;
-            m2 = m2 -60;
-        }
-    }
 
     public void menos(View v){
-        arrumaHora();
         if(h2 > h1){
             ht = h2 - h1;
             mt = m2 - m1;
@@ -64,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void mais(View v){
-        arrumaHora();
         ht = h1 + h2;
         mt = m1 +m2;
         while(mt >59){
