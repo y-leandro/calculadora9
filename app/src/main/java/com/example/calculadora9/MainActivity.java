@@ -8,62 +8,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    EditText eH1, eM1, eH2, eM2;
-    TextView SH, SM;
-    int h1, m1, h2, m2, ht, mt;
+    EditText N1, N2;
+    TextView T;
+    int n1, n2, t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        eH1 = findViewById(R.id.num1);
-        eM1 = findViewById(R.id.min1);
-        eH2 = findViewById(R.id.num2);
-        eM2 = findViewById(R.id.min2);
-        SH = findViewById(R.id.total);
-        SM = findViewById(R.id.mostraM);
-    }
-
-
-    public void menos(View v){
-        if(h2 > h1){
-            ht = h2 - h1;
-            mt = m2 - m1;
-        }
-        else {
-            ht = h1 - h2;
-            if (m2 > m1) {
-                mt = m2 - m1;
-
-            } else {
-                mt = m1 - m2;
-            }
-        }
-        while(mt < 0){
-            ht --;
-            mt = mt +60;
-        }
-        SH.setText(ht+"");
-        SM.setText(mt+"");
-    }
-
-    public void mais(View v){
-        ht = h1 + h2;
-        mt = m1 +m2;
-        while(mt >59){
-            ht ++;
-            mt = mt -60;
-        }
-        SH.setText(ht+"");
-        SM.setText(mt+"");
+        N1 = findViewById(R.id.num1);
+        N2 = findViewById(R.id.num2);
+        T = findViewById(R.id.total);
     }
 
     public void resetar(View v){
-        SH.setText("SH");
-        SM.setText("SM");
-        eH1.setText("");
-        eH2.setText("");
-        eM1.setText("");
-        eM2.setText("");
+        N1.setText("");
+        N2.setText("");
+        T.setText("");
     }
 }
