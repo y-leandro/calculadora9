@@ -92,7 +92,6 @@
         android:layout_width="124dp"
         android:layout_height="42dp"
         android:backgroundTint="#7F7979"
-        android:onClick="menos"
         android:text="Subtrair"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,7 +105,6 @@
         android:layout_width="128dp"
         android:layout_height="42dp"
         android:backgroundTint="#807979"
-        android:onClick="mais"
         android:text="Somar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,25 +114,16 @@
         app:layout_constraintVertical_bias="0.563" />
 
     <Button
-        android:id="@+id/btnCerteza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnFrase"
+        android:layout_width="92dp"
+        android:layout_height="33dp"
         android:backgroundTint="#000000"
-        android:text="Certeza?"
+        android:text="frase"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.79" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#4788A1"
-        android:onClick="resetar"
-        android:text="Resetar"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="435dp" />
+        app:layout_constraintVertical_bias="0.997" />
 </androidx.constraintlayout.widget.ConstraintLayout>
