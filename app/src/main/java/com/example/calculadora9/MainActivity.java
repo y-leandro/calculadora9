@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        eH1 = findViewById(R.id.editHora1);
-        eM1 = findViewById(R.id.editMin1);
-        eH2 = findViewById(R.id.editHora2);
-        eM2 = findViewById(R.id.editMin2);
-        SH = findViewById(R.id.SH);
-        SM = findViewById(R.id.SM);
+        eH1 = findViewById(R.id.hora1);
+        eM1 = findViewById(R.id.min1);
+        eH2 = findViewById(R.id.hora2);
+        eM2 = findViewById(R.id.min2);
+        SH = findViewById(R.id.mostraH);
+        SM = findViewById(R.id.mostraM);
     }
 
     public void organizaHora(){
