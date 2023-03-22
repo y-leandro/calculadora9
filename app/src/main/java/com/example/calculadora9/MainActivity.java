@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     public void numero() {
         n1 = Integer.parseInt(N1.getText().toString());
         n2 = Integer.parseInt(N2.getText().toString());
-        t  = Integer.parseInt(Ttl.getText().toString());
     }
 
     public void menos (View v){
