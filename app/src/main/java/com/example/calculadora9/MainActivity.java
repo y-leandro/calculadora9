@@ -21,55 +21,6 @@ public class MainActivity extends AppCompatActivity {
         T = findViewById(R.id.total);
     }
 
-    public void arrumaHora(){
-        n1 = Integer.parseInt(N1.getText().toString());
-        n2 = Integer.parseInt(N2.getText().toString());
-
-        while(m1 > 59){
-            h1 ++;
-            m1 = m1 - 60;
-        }
-        while(m2 >59){
-            h2 ++;
-            m2 = m2 -60;
-        }
-    }
-
-    public void menos(View v){
-        arrumaHora();
-        if(h2 > h1){
-            ht = h2 - h1;
-            mt = m2 - m1;
-        }
-        else {
-            ht = h1 - h2;
-            if (m2 > m1) {
-                mt = m2 - m1;
-
-            } else {
-                mt = m1 - m2;
-            }
-        }
-        while(mt < 0){
-            ht --;
-            mt = mt +60;
-        }
-        SH.setText(ht+"");
-        SM.setText(mt+"");
-    }
-
-    public void mais(View v){
-        arrumaHora();
-        ht = h1 + h2;
-        mt = m1 +m2;
-        while(mt >59){
-            ht ++;
-            mt = mt -60;
-        }
-        SH.setText(ht+"");
-        SM.setText(mt+"");
-    }
-
     public void resetar(View v){
         SH.setText("SH");
         SM.setText("SM");
