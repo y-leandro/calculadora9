@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        eH1 = findViewById(R.id.hora1);
+        eH1 = findViewById(R.id.num1);
         eM1 = findViewById(R.id.min1);
-        eH2 = findViewById(R.id.hora2);
+        eH2 = findViewById(R.id.num2);
         eM2 = findViewById(R.id.min2);
-        SH = findViewById(R.id.mostraH);
+        SH = findViewById(R.id.total);
         SM = findViewById(R.id.mostraM);
     }
 
