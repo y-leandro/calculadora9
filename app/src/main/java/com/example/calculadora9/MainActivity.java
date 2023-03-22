@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         T = findViewById(R.id.total);
     }
 
+    public void menos (View v){
+        if(N1 < N2)
+        T = N1 - N2;
+    }
+
+
     public void resetar(View v){
         N1.setText("");
         N2.setText("");
