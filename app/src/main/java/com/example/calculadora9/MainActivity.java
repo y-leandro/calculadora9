@@ -22,11 +22,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetar(View v){
-        SH.setText("SH");
-        SM.setText("SM");
-        eH1.setText("");
-        eH2.setText("");
-        eM1.setText("");
-        eM2.setText("");
+        N1.setText("");
+        N2.setText("");
+        T.setText("");
     }
 }
