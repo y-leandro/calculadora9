@@ -8,7 +8,7 @@
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/min1"
         android:layout_width="116dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.288" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/hora1"
         android:layout_width="116dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.172" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/hora2"
         android:layout_width="116dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -50,7 +50,7 @@
         app:layout_constraintVertical_bias="0.172" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/min2"
         android:layout_width="116dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -64,7 +64,7 @@
         app:layout_constraintVertical_bias="0.288" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/mostraM"
         android:layout_width="113dp"
         android:layout_height="41dp"
         android:text="TextView"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.455" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/mostraH"
         android:layout_width="113dp"
         android:layout_height="41dp"
         android:text="TextView"
