@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         eM1 = findViewById(R.id.min1);
         eH2 = findViewById(R.id.num2);
         eM2 = findViewById(R.id.min2);
-        SH = findViewById(R.id.mostraH);
+        SH = findViewById(R.id.total);
         SM = findViewById(R.id.mostraM);
     }
 
