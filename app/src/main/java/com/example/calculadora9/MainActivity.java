@@ -8,27 +8,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    EditText eH1, eM1, eH2, eM2;
-    TextView SH, SM;
-    int h1, m1, h2, m2, ht, mt;
+    EditText N1, N2;
+    TextView T;
+    int n1, n2, t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        eH1 = findViewById(R.id.num1);
-        eM1 = findViewById(R.id.min1);
-        eH2 = findViewById(R.id.num2);
-        eM2 = findViewById(R.id.min2);
-        SH = findViewById(R.id.total);
-        SM = findViewById(R.id.mostraM);
+        N1 = findViewById(R.id.num1);
+        N2 = findViewById(R.id.num2);
+        T = findViewById(R.id.total);
     }
 
     public void arrumaHora(){
-        h1 = Integer.parseInt(eH1.getText().toString());
-        m1 = Integer.parseInt(eM1.getText().toString());
-        h2 = Integer.parseInt(eH2.getText().toString());
-        m2 = Integer.parseInt(eM2.getText().toString());
+        n1 = Integer.parseInt(N1.getText().toString());
+        n2 = Integer.parseInt(N2.getText().toString());
 
         while(m1 > 59){
             h1 ++;
