@@ -79,6 +79,7 @@
         android:layout_width="102dp"
         android:layout_height="38dp"
         android:backgroundTint="#000000"
+        android:onClick="ir_frase"
         android:text="frase"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
