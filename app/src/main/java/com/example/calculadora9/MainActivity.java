@@ -32,10 +32,14 @@ public class MainActivity extends AppCompatActivity {
     public void menos (View v){
         numero();
         t = n1 - n2;
+
+        Ttl.setText(t+"");
     }
     public void mais (View v){
         numero();
         t = n1 + n2;
+
+        Ttl.setText(t+"");
     }
 
     public void ir_frase(View v){
