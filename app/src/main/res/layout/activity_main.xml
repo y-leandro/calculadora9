@@ -8,39 +8,25 @@
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/min1"
+        android:id="@+id/num1"
         android:layout_width="116dp"
         android:layout_height="52dp"
         android:ems="10"
-        android:hint="Min"
+        android:hint="numero"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
-
-    <EditText
-        android:id="@+id/hora1"
-        android:layout_width="116dp"
-        android:layout_height="52dp"
-        android:ems="10"
-        android:hint="Hora"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.172" />
 
     <EditText
-        android:id="@+id/hora2"
+        android:id="@+id/num2"
         android:layout_width="116dp"
         android:layout_height="52dp"
         android:ems="10"
-        android:hint="Hora"
+        android:hint="numero"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,20 +34,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.172" />
-
-    <EditText
-        android:id="@+id/min2"
-        android:layout_width="116dp"
-        android:layout_height="52dp"
-        android:ems="10"
-        android:hint="Min"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.827"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
 
     <TextView
         android:id="@+id/mostraM"
@@ -116,17 +88,17 @@
         app:layout_constraintVertical_bias="0.563" />
 
     <Button
-        android:id="@+id/btnCerteza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnFrase"
+        android:layout_width="102dp"
+        android:layout_height="38dp"
         android:backgroundTint="#000000"
-        android:text="Certeza?"
+        android:text="frase"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.79" />
+        app:layout_constraintVertical_bias="0.997" />
 
     <Button
         android:id="@+id/button"
