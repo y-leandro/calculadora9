@@ -28,6 +28,20 @@ public class MainActivity extends AppCompatActivity {
         n2 = Integer.parseInt(N2.getText().toString());
     }
 
+    public void vezes (View v){
+        numero();
+        t = n1 * n2;
+
+        Ttl.setText(t+"");
+    }
+
+    public void dividido (View v){
+        numero();
+        t = n1 / n2;
+
+        Ttl.setText(t+"");
+    }
+
     public void menos (View v){
         numero();
         t = n1 - n2;
