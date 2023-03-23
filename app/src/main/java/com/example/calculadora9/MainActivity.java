@@ -30,26 +30,40 @@ public class MainActivity extends AppCompatActivity {
 
     public void vezes (View v){
         numero();
-        t = n1 * n2;
-
-        Ttl.setText(t+"");
+        if(n1 == 0){
+            t = n2 * 982;
+        } else {
+            t = n1 * n2;
+        }
+        Ttl.setText(t + "");
     }
 
     public void dividido (View v){
         numero();
-        t = n1 / n2;
+        if(n1 < n2){
+            Ttl.setText("3RR0R M4LUC0");
+        } else {
+            t = n1 / n2;
 
-        Ttl.setText(t+"");
+            Ttl.setText(t + "");
+        }
     }
 
     public void menos (View v){
         numero();
-        t = n1 - n2;
+        if(n2 > n1){
+            t = 4;
 
-        Ttl.setText(t+"");
+            Ttl.setText(t+"");
+        } else {
+            t = n1 - n2;
+
+            Ttl.setText(t + "");
+        }
     }
     public void mais (View v){
         numero();
+
         t = n1 + n2;
 
         Ttl.setText(t+"");
